@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Slap Object Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/game.min.css">
+
+</head>
+
+<body>
+    <div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="gameTitle">The Slap Game</h2>
+        </div>
+        <div class="row">
+            <span id="spanRow">Health:  <span id="health">--</span>| Target: <span id="name">--</span>| Hits: <span id="hits">--</span></span>
+        </div>
+        <div class="row">
+            <img src="https://thumbs.gfycat.com/PastCookedCuscus-size_restricted.gif" width=200px alt="Scarecrow gif">
+        </div>
+        <div class="row">
+            <button class="button btn btn-danger m-1" onclick="slap()">Slap!</button>
+            <button class="button btn btn-warning m-1" onclick="punch()">Punch!</button>
+            <button class="button btn btn-primary m-1" onclick="kick()">Kick!</button>
+        </div>
+        <div class="row" id="items">
+            <button id="shield" class="button btn btn-info m-1" onclick=giveItem(id)>Shield</button>
+            <button id="hammer" class="button btn btn-info m-1" onclick=giveItem(id)>Hammer</button>
+            <button id="mace" class="button btn btn-info m-1" onclick=giveItem(id)>Mace</button>
+        </div>
+        <div class="row">
+            <span id="modsRow">#Shields:  <span id="nbrShields">--</span>| #Hammers: <span id="nbrHammers">--</span>| #Maces: <span id="nbrMaces">--</span></span>
+        </div>
+    </div>
+    <script src="app/game.js"></script>
+</body>
+
+</html>
